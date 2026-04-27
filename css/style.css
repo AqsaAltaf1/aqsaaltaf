@@ -8462,6 +8462,10 @@ h1, h2, h3, h4, h5,
           -webkit-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
           -moz-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
           box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16); }
+        .owl-carousel.home-slider .slider-item .slider-text .one-third.img {
+          background-size: contain;
+          background-position: center bottom;
+          background-repeat: no-repeat; }
           .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay, .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay-1 {
             position: absolute;
             left: -7%;
