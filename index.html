@@ -1060,7 +1060,7 @@
     </section> -->
 
     <section
-      class="ftco-section contact-section ftco-no-pb"
+      class="ftco-section contact-section"
       id="contact-section"
     >
       <div class="container">
@@ -1076,49 +1076,104 @@
           </div>
         </div>
 
-        <div class="row block-9 justify-content-center text-center">
-          <div class="col-12 col-lg-4 mb-3">
-            <div class="dbox d-flex justify-content-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="fa fa-linkedin"></span>
+        <div class="row contact-layout align-items-start">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="contact-info-side">
+              <div class="dbox d-flex align-items-center mb-4">
+                <div class="icon d-flex align-items-center justify-content-center mb-0">
+                  <span class="fa fa-linkedin"></span>
+                </div>
+                <div class="text text-left">
+                  <p>
+                    <span>LinkedIn:</span>
+                    <a
+                      href="https://www.linkedin.com/in/aqsa-altaf-295416201/"
+                      target="_blank"
+                      >Visit My LinkedIn Profile</a
+                    >
+                  </p>
+                </div>
               </div>
-              <div class="text text-left">
-                <p>
-                  <span>LinkedIn:</span>
-                  <a
-                    href="https://www.linkedin.com/in/aqsa-altaf-295416201/"
-                    target="_blank"
-                    >Visit My LinkedIn Profile</a
-                  >
-                </p>
+              <div class="dbox d-flex align-items-center mb-4">
+                <div class="icon d-flex align-items-center justify-content-center mb-0">
+                  <span class="fa fa-paper-plane"></span>
+                </div>
+                <div class="text text-left">
+                  <p>
+                    <span>Email:</span>
+                    <a href="mailto:aqsaaltaf01@gmail.com">aqsaaltaf01@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+              <div class="dbox d-flex align-items-center mb-0 mb-lg-4">
+                <div class="icon d-flex align-items-center justify-content-center mb-0">
+                  <span class="fa fa-phone"></span>
+                </div>
+                <div class="text text-left">
+                  <p>
+                    <span>Phone:</span>
+                    <a href="tel:+923258867715">+92 325 8867715</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4 mb-3">
-            <div class="dbox d-flex justify-content-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="fa fa-paper-plane"></span>
+
+          <div class="col-lg-7">
+            <form id="contact-form" class="contact-form bg-white p-4 p-md-5 shadow h-100">
+              <div class="form-group mb-3">
+                <label for="contact-name">Name <span class="text-danger">*</span></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contact-name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                  aria-required="true"
+                />
               </div>
-              <div class="text text-left">
-                <p>
-                  <span>Email:</span>
-                  <a href="mailto:aqsaaltaf01@gmail.com">aqsaaltaf01@gmail.com</a>
-                </p>
+              <div class="form-group mb-3">
+                <label for="contact-email">Email <span class="text-danger">*</span></label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contact-email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                  aria-required="true"
+                />
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 mb-3">
-            <div class="dbox d-flex justify-content-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="fa fa-phone"></span>
+              <div class="form-group mb-3">
+                <label for="contact-subject">Subject <span class="text-danger">*</span></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contact-subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                  aria-required="true"
+                />
               </div>
-              <div class="text text-left">
-                <p>
-                  <span>Phone:</span>
-                  <a href="tel:+923258867715">+92 325 8867715</a>
-                </p>
+              <div class="form-group mb-3">
+                <label for="contact-description">Message <span class="text-danger">*</span></label>
+                <textarea
+                  class="form-control"
+                  id="contact-description"
+                  name="description"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                  aria-required="true"
+                ></textarea>
               </div>
-            </div>
+              <div id="contact-form-status" class="contact-form-status mb-3" role="status" aria-live="polite"></div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary py-3 px-5">Send Message</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -1287,9 +1342,8 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
   </body>
 </html>

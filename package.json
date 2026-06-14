@@ -1,0 +1,10 @@
+{
+  "name": "aqsaaltaf",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "resend": "^4.0.0"
+  }
+}

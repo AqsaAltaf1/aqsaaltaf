@@ -9479,6 +9479,39 @@ textarea.form-control {
   .contact-section .contact-form textarea.form-control {
     height: inherit !important; }
 
+.contact-form-status {
+  font-size: 14px;
+  min-height: 1.25rem; }
+  .contact-form-status--success {
+    color: #28a745; }
+  .contact-form-status--error {
+    color: #dc3545; }
+
+.contact-layout {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.contact-info-side {
+  padding: 1.5rem 0; }
+  @media (min-width: 992px) {
+    .contact-info-side {
+      padding: 2rem 1.5rem 2rem 0; } }
+
+.contact-info-side .dbox .icon {
+  margin: 0 0 0 0;
+  flex-shrink: 0; }
+
+.contact-info-side .dbox .text {
+  width: auto;
+  flex: 1; }
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333; }
+
 .dbox {
   width: 100%;
   margin-bottom: 0px; }
