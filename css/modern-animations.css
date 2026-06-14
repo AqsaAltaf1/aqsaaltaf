@@ -1,0 +1,256 @@
+/* Modern scroll & interaction animations */
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll,
+  .hero-entrance > *,
+  .ftco-animate {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.nav-active > .nav-link span {
+  color: #b1b493; }
+
+.ftco-navbar-light .navbar-nav > .nav-item.nav-active > .nav-link span:before {
+  width: 100%; }
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(36px) scale(0.98);
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.reveal-fade {
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.reveal-fade.is-visible {
+  opacity: 1;
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Hero text entrance */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-entrance .subheading {
+  animation: heroFadeUp 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0;
+}
+
+.hero-entrance .hero-title,
+.hero-entrance h1 {
+  animation: heroFadeUp 0.85s 0.12s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0;
+}
+
+.hero-entrance .btn-primary {
+  animation: heroFadeUp 0.85s 0.24s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0;
+}
+
+/* Buttons */
+.btn-primary {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(177, 180, 147, 0.45);
+}
+
+.btn-primary:active {
+  transform: translateY(-1px);
+}
+
+/* Service cards */
+#services-section .services {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease;
+}
+
+#services-section .services:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12) !important;
+}
+
+#services-section .services .icon {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#services-section .services:hover .icon {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+/* Project cards */
+#projects-section .project {
+  overflow: hidden;
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease;
+}
+
+#projects-section .project::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(177, 180, 147, 0.35));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+#projects-section .project:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+#projects-section .project:hover::before {
+  opacity: 1;
+}
+
+#projects-section .project .text {
+  transition: transform 0.4s ease;
+  z-index: 2;
+}
+
+#projects-section .project:hover .text {
+  transform: translateY(-4px);
+}
+
+/* Skill cards */
+#skills-section .bg-white.rounded-lg {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+#skills-section .bg-white.rounded-lg:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1) !important;
+}
+
+#skills-section .progress {
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#skills-section .progress.is-animated {
+  transform: scale(1);
+}
+
+#skills-section .progress:not(.is-animated) {
+  transform: scale(0.85);
+}
+
+/* Counter blocks */
+#section-counter .block-18 {
+  transition:
+    transform 0.35s ease,
+    background-color 0.35s ease;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+#section-counter .block-18:hover {
+  transform: translateY(-4px);
+  background: rgba(177, 180, 147, 0.08);
+}
+
+#section-counter .icon {
+  transition: transform 0.35s ease;
+}
+
+#section-counter .block-18:hover .icon {
+  transform: scale(1.1);
+}
+
+/* Navbar links */
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link span {
+  transition: color 0.25s ease;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover span {
+  color: #b1b493;
+}
+
+/* Section headings accent line */
+.heading-section h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.heading-section h2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  margin: 12px auto 0;
+  background: linear-gradient(90deg, transparent, #b1b493, transparent);
+  transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.heading-section.is-visible h2::after {
+  width: 72px;
+}
+
+/* Contact form focus glow */
+.contact-form .form-control {
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.contact-form .form-control:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(177, 180, 147, 0.2);
+}
+
+/* Smoother existing animate.css when revealed */
+.ftco-animated.fadeInUp {
+  animation-duration: 0.85s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ftco-animated.fadeInLeft,
+.ftco-animated.fadeInRight {
+  animation-duration: 0.85s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
