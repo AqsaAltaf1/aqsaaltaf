@@ -3,14 +3,16 @@
 
   function initScrollReveal() {
     var targets = document.querySelectorAll(
-      "#skills-section .col-lg-3.mb-4, " +
-        "#services-section .services, " +
-        "#projects-section .project, " +
+      "#skills-section .skill-category, " +
+        "#services-section .services-carousel, " +
+        "#why-me-section .why-me-card, " +
+        "#projects-section .project-card, " +
+        "#testimonials-section .testimony-wrap, " +
         "#section-counter .counter-wrap, " +
         "#about-section .img-about, " +
         "#about-section .heading-section, " +
         "#contact-section .contact-info-side, " +
-        "#contact-section .contact-form"
+        "#contact-section .contact-visual"
     );
 
     targets.forEach(function (el, i) {
@@ -39,50 +41,6 @@
       .forEach(function (el) {
         observer.observe(el);
       });
-  }
-
-  function initSkillCircles() {
-    var circles = document.querySelectorAll("#skills-section .progress");
-    if (!circles.length) return;
-
-    function animateCircle(circle) {
-      if (circle.classList.contains("is-animated")) return;
-      circle.classList.add("is-animated");
-
-      var value = parseInt(circle.getAttribute("data-value"), 10) || 0;
-      var left = circle.querySelector(".progress-left .progress-bar");
-      var right = circle.querySelector(".progress-right .progress-bar");
-      if (!left || !right) return;
-
-      function toDegrees(pct) {
-        return (pct / 100) * 360;
-      }
-
-      setTimeout(function () {
-        if (value <= 50) {
-          right.style.transform = "rotate(" + toDegrees(value) + "deg)";
-        } else {
-          right.style.transform = "rotate(180deg)";
-          left.style.transform = "rotate(" + toDegrees(value - 50) + "deg)";
-        }
-      }, 150);
-    }
-
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            animateCircle(entry.target);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.35 }
-    );
-
-    circles.forEach(function (circle) {
-      observer.observe(circle);
-    });
   }
 
   function initHeroEntrance() {
@@ -141,7 +99,6 @@
 
   function onReady() {
     initScrollReveal();
-    initSkillCircles();
     initHeroEntrance();
     initSmoothSectionObserver();
   }

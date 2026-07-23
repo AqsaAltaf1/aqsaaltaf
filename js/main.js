@@ -2,14 +2,16 @@
 
 	"use strict";
 
-	$(window).stellar({
-    responsive: true,
-    parallaxBackgrounds: true,
-    parallaxElements: true,
-    horizontalScrolling: false,
-    hideDistantElements: false,
-    scrollProperty: 'scroll'
-  });
+	if (window.matchMedia("(min-width: 992px)").matches) {
+		$(window).stellar({
+			responsive: true,
+			parallaxBackgrounds: true,
+			parallaxElements: true,
+			horizontalScrolling: false,
+			hideDistantElements: false,
+			scrollProperty: 'scroll'
+		});
+	}
 
 
 	var fullHeight = function() {
@@ -68,6 +70,13 @@
 
 	    var href = $.attr(this, 'href');
 
+	    // Close mobile menu so body scroll is restored
+	    if ($('#ftco-nav').hasClass('show')) {
+	      $('#ftco-nav').collapse('hide');
+	      $('.js-fh5co-nav-toggle').removeClass('active').attr('aria-expanded', 'false');
+	    }
+	    $('body').removeClass('menu-show');
+
 	    $('html, body').animate({
 	        scrollTop: $($.attr(this, 'href')).offset().top - 70
 	    }, 500, function() {
@@ -91,6 +100,9 @@
 	    autoplayHoverPause: false,
 	    autoHeight: window.matchMedia("(max-width: 991px)").matches,
 	    items: 1,
+	    mouseDrag: false,
+	    touchDrag: false,
+	    pullDrag: false,
 	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
 	    responsive:{
 	      0:{
@@ -113,7 +125,8 @@
 			margin: 30,
 			stagePadding: 0,
 			nav: false,
-			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
+			dots: true,
+			navText: ['<span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span>'],
 			responsive:{
 				0:{
 					items: 1
@@ -123,6 +136,30 @@
 				},
 				1000:{
 					items: 3
+				}
+			}
+		});
+		$('.services-carousel').owlCarousel({
+			loop: true,
+			autoplay: true,
+			autoplayTimeout: 3500,
+			autoplayHoverPause: true,
+			margin: 24,
+			nav: true,
+			dots: true,
+			navText: ['<span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span>'],
+			responsive:{
+				0:{
+					items: 1
+				},
+				600:{
+					items: 2
+				},
+				992:{
+					items: 3
+				},
+				1200:{
+					items: 4
 				}
 			}
 		});
