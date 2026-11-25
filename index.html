@@ -1,1190 +1,637 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AqsaAltaf</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aqsa Altaf — Full-Stack &amp; AI Engineer</title>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="description"
+      content="Aqsa Altaf is a full-stack and AI engineer with 5+ years building web apps, SaaS products, APIs and integrations with Ruby on Rails, React, Next.js, Django and AWS."
     />
+    <meta name="theme-color" content="#F2F0EA" />
 
+    <meta property="og:title" content="Aqsa Altaf — Full-Stack &amp; AI Engineer" />
+    <meta
+      property="og:description"
+      content="5+ years building web apps, SaaS products, APIs and integrations. Rails, React, Next.js, Django, AWS."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/about-1.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
-    <link rel="stylesheet" href="css/animate.css" />
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/modern-animations.css" />
+    <link rel="stylesheet" href="css/editorial.css" />
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <nav
-      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
-      id="ftco-navbar"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Aqsa Altaf<span>.</span></a>
-        <button
-          class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
-          type="button"
-          data-toggle="collapse"
-          data-target="#ftco-nav"
-          aria-controls="ftco-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="fa fa-bars"></span> Menu
-        </button>
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto">
-            <li class="nav-item">
-              <a href="#home-section" class="nav-link"><span>Home</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#about-section" class="nav-link"><span>About</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#skills-section" class="nav-link"><span>Skills</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#services-section" class="nav-link"
-                ><span>Services</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#why-me-section" class="nav-link"
-                ><span>Why Me</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#projects-section" class="nav-link"
-                ><span>Projects</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#testimonials-section" class="nav-link"
-                ><span>Reviews</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#contact-section" class="nav-link"
-                ><span>Contact</span></a
-              >
-            </li>
+  <body>
+    <div class="progress" aria-hidden="true"></div>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-head">
+      <div class="wrap site-head__in">
+        <a class="brand" href="index.html">Aqsa Altaf<span>.</span></a>
+
+        <nav class="nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#services-section">Services</a></li>
+            <li><a href="#why-me-section">Why me</a></li>
+            <li><a href="#projects-section">Work</a></li>
+            <li><a href="#testimonials-section">Reviews</a></li>
+            <li><a href="#contact-section">Contact</a></li>
           </ul>
+        </nav>
+
+        <div class="head-right">
+          <span class="avail"><i></i> Available for work</span>
+          <button class="theme-btn" type="button" aria-label="Toggle colour theme">☾</button>
+          <button class="burger" type="button" aria-label="Toggle menu" aria-controls="mobile-nav">
+            <span></span><span></span>
+          </button>
         </div>
       </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="#about-section">About <em>01</em></a>
+      <a href="#skills-section">Skills <em>02</em></a>
+      <a href="#services-section">Services <em>03</em></a>
+      <a href="#why-me-section">Why me <em>04</em></a>
+      <a href="#projects-section">Work <em>05</em></a>
+      <a href="#testimonials-section">Reviews <em>06</em></a>
+      <a href="#contact-section">Contact <em>07</em></a>
     </nav>
-    <section id="home-section" class="hero">
-      <div class="home-slider owl-carousel">
-        <div class="slider-item">
-          <div class="overlay"></div>
-          <div class="container-fluid px-0">
-            <div
-              class="row d-flex flex-column flex-md-row no-gutters slider-text align-items-stretch align-items-md-end justify-content-md-end"
-              data-scrollax-parent="true"
-            >
-              <div
-                class="one-third order-1 order-md-last img"
-                style="
-                  background-image: url(images/bg_1.jpg);
-                  background-color: #b7b5b5;
-                "
-              >
-                <div class="overlay"></div>
-                <div class="overlay-1"></div>
-              </div>
-              <div
-                class="one-forth order-2 order-md-1 d-flex align-items-center ftco-animate"
-                data-scrollax=" properties: { translateY: '70%' }"
-              >
-                <div class="text">
-                  <h1 class="mb-3 mt-3 hero-title">
-                    You think Big. I make <span>IT</span>, possible!
-                  </h1>
-                  <p class="hero-subtitle mb-4">
-                    I am Aqsa Altaf, Full Stack &amp; AI Development
-                  </p>
-                  <p>
-                    <a href="#contact-section" class="btn btn-primary"
-                      >Hire me</a
-                    >
-                  </p>
-                </div>
+
+    <main id="home-section">
+      <!-- ================= HERO ================= -->
+      <section class="hero">
+        <div class="wrap">
+          <div class="hero__grid">
+            <div class="hero__copy reveal is-in">
+              <p class="kicker">Full-stack &amp; AI engineering · Pakistan</p>
+              <h1>
+                <span class="line">Full-stack</span>
+                <span class="line stroke">&amp; AI</span>
+                <span class="line">Engineer<span class="accent">.</span></span>
+              </h1>
+              <p class="hero__sub">
+                You think big — I make <strong>IT</strong> possible. I'm Aqsa Altaf,
+                and I build fast, reliable products: web apps, SaaS platforms,
+                APIs and the integrations that hold them together.
+              </p>
+              <div class="hero__cta">
+                <a href="#contact-section" class="btn btn--solid">Hire me <i>→</i></a>
+                <a href="#projects-section" class="btn">See the work <i>↓</i></a>
               </div>
             </div>
+
+            <figure class="hero__figure reveal" data-delay="0.15">
+              <div class="frame">
+                <img src="images/about-1.jpg" alt="Portrait of Aqsa Altaf" />
+                <span class="tagblock">5+ years · Full-stack</span>
+              </div>
+            </figure>
           </div>
         </div>
 
-        <div class="slider-item">
-          <div class="overlay"></div>
-          <div class="container-fluid px-0">
-            <div
-              class="row d-flex flex-column flex-md-row no-gutters slider-text align-items-stretch align-items-md-end justify-content-md-end"
-              data-scrollax-parent="true"
-            >
-              <div
-                class="one-third order-1 order-md-last img"
-                style="
-                  background-image: url(images/bg_2.jpg);
-                  background-color: #b7b5b5;
-                "
-              >
-                <div class="overlay"></div>
-                <div class="overlay-1"></div>
-              </div>
-              <div
-                class="one-forth order-2 order-md-1 d-flex align-items-center ftco-animate"
-                data-scrollax=" properties: { translateY: '70%' }"
-              >
-                <div class="text">
-                  <span class="subheading">I Code, Create &amp; Launch</span>
-                  <h1 class="mb-4 mt-3 hero-title">
-                    Hi, I am <span>Aqsa Altaf</span>, and this is my passion in
-                    action.
-                  </h1>
-                  <p>
-                    <a href="#contact-section" class="btn btn-primary"
-                      >Hire me</a
-                    >
-                  </p>
-                </div>
-              </div>
+        <!-- marquee -->
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <div class="marquee__group">
+              <span>React</span><b>◆</b>
+              <span>Ruby on Rails</span><b>◆</b>
+              <span>Next.js</span><b>◆</b>
+              <span>Django</span><b>◆</b>
+              <span>AWS</span><b>◆</b>
+              <span>Python</span><b>◆</b>
+              <span>AI Agents</span><b>◆</b>
+              <span>Docker</span><b>◆</b>
+              <span>REST APIs</span><b>◆</b>
+              <span>Java</span><b>◆</b>
+            </div>
+            <div class="marquee__group">
+              <span>React</span><b>◆</b>
+              <span>Ruby on Rails</span><b>◆</b>
+              <span>Next.js</span><b>◆</b>
+              <span>Django</span><b>◆</b>
+              <span>AWS</span><b>◆</b>
+              <span>Python</span><b>◆</b>
+              <span>AI Agents</span><b>◆</b>
+              <span>Docker</span><b>◆</b>
+              <span>REST APIs</span><b>◆</b>
+              <span>Java</span><b>◆</b>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="ftco-counter img bg-light" id="section-counter">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-md-3 justify-content-center counter-wrap ftco-animate"
-          >
-            <div class="block-18 d-flex">
-              <div
-                class="icon d-flex justify-content-center align-items-center"
-              >
-                <span class="flaticon-suitcase"></span>
-              </div>
-              <div class="text">
-                <strong class="number" data-number="750">0</strong>
-                <span>Project Complete</span>
-              </div>
-            </div>
+      <!-- ================= STATS ================= -->
+      <section class="wrap" id="stats-section" style="padding-top: 0">
+        <div class="stats">
+          <div class="stat reveal">
+            <b><span data-count="5" data-suffix="+">0</span></b>
+            <span>Years experience</span>
           </div>
-          <div
-            class="col-md-3 justify-content-center counter-wrap ftco-animate"
-          >
-            <div class="block-18 d-flex">
-              <div
-                class="icon d-flex justify-content-center align-items-center"
-              >
-                <span class="flaticon-loyalty"></span>
-              </div>
-              <div class="text">
-                <strong class="number" data-number="568">0</strong>
-                <span>Happy Clients</span>
-              </div>
-            </div>
+          <div class="stat reveal" data-delay="0.08">
+            <b><span data-count="20" data-suffix="+">0</span></b>
+            <span>Projects delivered</span>
           </div>
-          <div
-            class="col-md-3 justify-content-center counter-wrap ftco-animate"
-          >
-            <div class="block-18 d-flex">
-              <div
-                class="icon d-flex justify-content-center align-items-center"
-              >
-                <span class="flaticon-coffee"></span>
-              </div>
-              <div class="text">
-                <strong class="number" data-number="478">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
+          <div class="stat reveal" data-delay="0.16">
+            <b><span data-count="28" data-suffix="">0</span></b>
+            <span>Technologies used</span>
           </div>
-          <div
-            class="col-md-3 justify-content-center counter-wrap ftco-animate"
-          >
-            <div class="block-18 d-flex">
-              <div
-                class="icon d-flex justify-content-center align-items-center"
-              >
-                <span class="flaticon-calendar"></span>
-              </div>
-              <div class="text">
-                <strong class="number">7+</strong>
-                <span>Years experienced</span>
-              </div>
-            </div>
+          <div class="stat reveal" data-delay="0.24">
+            <b><span data-count="15" data-suffix="">0</span></b>
+            <span>Services offered</span>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section
-      class="ftco-about ftco-section ftco-no-pt ftco-no-pb"
-      id="about-section"
-    >
-      <div class="container">
-        <div class="row d-flex no-gutters">
-          <div class="col-md-6 col-lg-5 d-flex">
-            <div class="img-about img d-flex align-items-stretch">
-              <div class="overlay"></div>
-              <div
-                class="img d-flex align-self-stretch align-items-center"
-                style="background-image: url(images/about-1.jpg)"
-              ></div>
-            </div>
+      <!-- ================= ABOUT ================= -->
+      <section class="section" id="about-section">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <p class="kicker">01 — My intro</p>
+            <h2>About me</h2>
           </div>
-          <div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
-            <div class="py-md-5">
-              <div class="row justify-content-start pb-3">
-                <div class="col-md-12 heading-section ftco-animate">
-                  <span class="subheading">My Intro</span>
-                  <h2
-                    class="mb-4"
-                    style="font-size: 34px; text-transform: capitalize"
-                  >
-                    About Me
-                  </h2>
-                  <p>
-                    I am software engineer with year's of professional
-                    experience as a Full Stack Developer passionate about
-                    crafting innovative, user-focused solutions. Specialisation
-                    in Ruby on Rails and React, I excel at building seamless,
-                    high- performance applications that merge intuitive design
-                    with robust functionality. Skilled in API integration, UI/UX
-                    optimization, and delivering scalable solutions, I thrive on
-                    solving complex challenges and driving technical excellence.
-                    A collaborative team player, I embrace agile workflows and
-                    take pride in writing clean, maintainable code that powers
-                    impactful digital experiences.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="ftco-section bg-light" id="skills-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-            <span class="subheading">Skills</span>
-            <h2 class="mb-4">My Skills</h2>
-            <p>
-              Passionate software engineer skilled in building robust web and
-              mobile applications. Experienced in modern frameworks, APIs, and
-              delivering clean, scalable code.
+          <div class="about__grid">
+            <p class="about__big reveal">
+              A software engineer who turns complex requirements into clean,
+              scalable products people actually enjoy using.
             </p>
+            <div class="about__body reveal" data-delay="0.1">
+              <p>
+                I'm a software engineer with over five years of professional
+                experience as a full-stack developer, passionate about crafting
+                innovative, user-focused solutions. Specialising in Ruby on Rails
+                and React, I build seamless, high-performance applications that
+                merge intuitive design with robust functionality.
+              </p>
+              <p>
+                I'm skilled in API integration, UI/UX optimisation and delivering
+                scalable solutions, and I thrive on solving complex challenges.
+                A collaborative team player, I embrace agile workflows and take
+                pride in writing clean, maintainable code that powers impactful
+                digital experiences.
+              </p>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="skills-grid">
-          <div class="skill-category">
-            <div class="skill-category-header">
-              <span class="skill-category-icon fa fa-desktop"></span>
+      <!-- ================= SKILLS ================= -->
+      <section class="section rule-top" id="skills-section">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <p class="kicker">02 — Skills</p>
+            <div>
+              <h2>What I work with</h2>
+              <p class="lead" style="margin-top: 16px">
+                Modern frameworks, APIs and cloud tooling — used to deliver clean,
+                scalable code across web and mobile products.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-row reveal">
+            <div class="skill-row__head">
+              <span class="skill-row__num">01</span>
               <h3>Frontend</h3>
             </div>
-            <div class="skill-tags">
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">React.js</span>
-              <span class="skill-tag">Next.js</span>
-              <span class="skill-tag">Tailwind</span>
-              <span class="skill-tag">jQuery</span>
-              <span class="skill-tag">Webflow</span>
+            <div class="tags">
+              <span class="tag">JavaScript</span><span class="tag">React.js</span>
+              <span class="tag">Next.js</span><span class="tag">Tailwind</span>
+              <span class="tag">jQuery</span><span class="tag">Webflow</span>
             </div>
           </div>
 
-          <div class="skill-category">
-            <div class="skill-category-header">
-              <span class="skill-category-icon fa fa-code"></span>
+          <div class="skill-row reveal">
+            <div class="skill-row__head">
+              <span class="skill-row__num">02</span>
               <h3>Backend</h3>
             </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Ruby on Rails</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">Django</span>
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">SaaS Development</span>
-              <span class="skill-tag">App Development</span>
-              <span class="skill-tag">Databases</span>
-              <span class="skill-tag">REST APIs</span>
+            <div class="tags">
+              <span class="tag">Ruby on Rails</span><span class="tag">Python</span>
+              <span class="tag">Django</span><span class="tag">Java</span>
+              <span class="tag">SaaS Development</span><span class="tag">App Development</span>
+              <span class="tag">Databases</span><span class="tag">REST APIs</span>
             </div>
           </div>
 
-          <div class="skill-category">
-            <div class="skill-category-header">
-              <span class="skill-category-icon fa fa-cloud"></span>
+          <div class="skill-row reveal">
+            <div class="skill-row__head">
+              <span class="skill-row__num">03</span>
               <h3>Cloud &amp; DevOps</h3>
             </div>
-            <div class="skill-tags">
-              <span class="skill-tag">AWS</span>
-              <span class="skill-tag">Heroku</span>
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">Firebase</span>
-              <span class="skill-tag">Base44</span>
-              <span class="skill-tag">Render</span>
-              <span class="skill-tag">Vercel</span>
-              <span class="skill-tag">Deployment</span>
+            <div class="tags">
+              <span class="tag">AWS</span><span class="tag">Heroku</span>
+              <span class="tag">Docker</span><span class="tag">Firebase</span>
+              <span class="tag">Base44</span><span class="tag">Render</span>
+              <span class="tag">Vercel</span><span class="tag">Deployment</span>
             </div>
           </div>
 
-          <div class="skill-category">
-            <div class="skill-category-header">
-              <span class="skill-category-icon fa fa-cogs"></span>
+          <div class="skill-row reveal">
+            <div class="skill-row__head">
+              <span class="skill-row__num">04</span>
               <h3>Integrations</h3>
             </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Third-Party Integration</span>
-              <span class="skill-tag">API Automation</span>
-              <span class="skill-tag">Payment Gateways</span>
+            <div class="tags">
+              <span class="tag">Third-Party Integration</span>
+              <span class="tag">API Automation</span>
+              <span class="tag">Payment Gateways</span>
             </div>
           </div>
 
-          <div class="skill-category skill-category--wide">
-            <div class="skill-category-header">
-              <span class="skill-category-icon fa fa-lightbulb-o"></span>
-              <h3>AI &amp; Modern Development</h3>
+          <div class="skill-row reveal">
+            <div class="skill-row__head">
+              <span class="skill-row__num">05</span>
+              <h3>AI &amp; Modern Dev</h3>
             </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Vibe Coding</span>
-              <span class="skill-tag">AI Agent Workflows</span>
-              <span class="skill-tag">AI Integration</span>
+            <div class="tags">
+              <span class="tag">Vibe Coding</span>
+              <span class="tag">AI Agent Workflows</span>
+              <span class="tag">AI Integration</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="ftco-section" id="services-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-            <span class="subheading">I am great at</span>
-            <h2 class="mb-4">I do awesome services for my clients</h2>
-            <p>
-              Far beyond the ordinary, I bring ideas to life, reaching across
-              horizons of innovation.
-            </p>
-          </div>
-        </div>
-
-        <div class="owl-carousel services-carousel">
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-3d-design"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Web Development</h3>
-                <p>
-                  I craft dynamic, responsive websites that drive engagement
-                  and connect businesses with their audiences.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-app-development"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Web Application</h3>
-                <p>
-                  Transforming ideas into high-performing, user-friendly web
-                  applications that drive success.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-computer"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">SaaS Development</h3>
-                <p>
-                  Building scalable multi-tenant SaaS products with billing,
-                  auth, dashboards, and cloud-ready architecture.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-web-programming"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Deployment</h3>
-                <p>
-                  Smooth and secure deployment services to get your applications
-                  live and performing at their best.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-branding"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">AI integration</h3>
-                <p>
-                  Empower applications with intelligent AI solutions to enhance
-                  automation, insights, and user experience.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-computer"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Web Scraping</h3>
-                <p>
-                  Extracting valuable data from websites efficiently and
-                  securely to power your business insights.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-vector"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Third-Party Integrations</h3>
-                <p>
-                  Integrating trusted services like Google Calendar for a
-                  smarter app experience.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-vector"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Testing</h3>
-                <p>
-                  Ensure the reliability and performance of your app with
-                  thorough testing and quality assurance.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-zoom"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Payment Gateways</h3>
-                <p>
-                  Integrated and tested secure payment gateways to ensure
-                  seamless and reliable transaction flows.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-app-development"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">React &amp; Next.js</h3>
-                <p>
-                  Building fast, SEO-friendly frontends and full-stack apps with
-                  React.js and Next.js.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-web-programming"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Django &amp; REST APIs</h3>
-                <p>
-                  Scalable Python backends and REST APIs with Django for secure,
-                  production-ready applications.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-computer"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Java Development</h3>
-                <p>
-                  Robust enterprise applications and backend services built with
-                  Java and modern frameworks.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-3d-design"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Vibe Coding</h3>
-                <p>
-                  Rapid AI-assisted development to ship features faster without
-                  sacrificing code quality.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-vector"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">API Automation</h3>
-                <p>
-                  Automating API workflows, integrations, and data pipelines to
-                  save time and reduce manual work.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="media block-6 services d-block bg-white rounded-lg shadow"
-            >
-              <div
-                class="icon shadow d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-branding"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">AI Agent Workflows</h3>
-                <p>
-                  Designing and deploying AI agents that automate tasks, connect
-                  tools, and streamline business processes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section bg-light" id="why-me-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-            <span class="subheading">My Value</span>
-            <h2 class="mb-4">Why Choose Me</h2>
-            <p>
-              I combine strong technical skills with clear communication and a
-              focus on shipping products that actually move your business forward.
-            </p>
-          </div>
-        </div>
-
-        <div class="why-me-grid">
-          <div class="why-me-card">
-            <div class="why-me-icon">
-              <span class="fa fa-briefcase"></span>
-            </div>
-            <h3>7+ Years Experience</h3>
-            <p>
-              Proven track record building web apps, SaaS products, and scalable
-              backends for startups and growing businesses.
-            </p>
-          </div>
-          <div class="why-me-card">
-            <div class="why-me-icon">
-              <span class="fa fa-cloud"></span>
-            </div>
-            <h3>SaaS Development</h3>
-            <p>
-              Building scalable multi-tenant SaaS products with billing, auth,
-              dashboards, and cloud-ready architecture.
-            </p>
-          </div>
-          <div class="why-me-card">
-            <div class="why-me-icon">
-              <span class="fa fa-lightbulb-o"></span>
-            </div>
-            <h3>Modern AI Tools Usage</h3>
-            <p>
-              Using modern AI tools and workflows to ship faster, automate
-              processes, and build smarter product features.
-            </p>
-          </div>
-          <div class="why-me-card">
-            <div class="why-me-icon">
-              <span class="fa fa-cogs"></span>
-            </div>
-            <h3>Third-Party Integration</h3>
-            <p>
-              Connecting payments, calendars, APIs, and external services so
-              your product works seamlessly with the tools you already use.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-hireme">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-md-8 col-lg-8 d-flex align-items-center">
-            <div class="w-100 py-4">
-              <h2>Have a project on your mind.</h2>
-              <p>
-                Let’s collaborate to build secure, scalable, and user-focused
-                applications tailored to your goals—whether it's a custom web
-                app, API integration, or a complete platform. I’ll work with you
-                every step of the way to turn your vision into reality.
-              </p>
-              <p class="mb-0">
-                <a href="#contact-section" class="btn btn-white py-3 px-4"
-                  >Contact me</a
-                >
+      <!-- ================= SERVICES ================= -->
+      <section class="section rule-top" id="services-section">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <p class="kicker">03 — What I offer</p>
+            <div>
+              <h2>Services</h2>
+              <p class="lead" style="margin-top: 16px">
+                Fifteen ways I help teams ship — from first line of code to a
+                deployed, tested, integrated product.
               </p>
             </div>
           </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-end">
-            <img src="images/author.png" class="img-fluid" alt="" />
+
+          <div class="svc-grid">
+            <article class="svc reveal"><span class="svc__num">01</span><h3>Web Development</h3><p>I craft dynamic, responsive websites that drive engagement and connect businesses with their audiences.</p></article>
+            <article class="svc reveal"><span class="svc__num">02</span><h3>Web Application</h3><p>Transforming ideas into high-performing, user-friendly web applications that drive success.</p></article>
+            <article class="svc reveal"><span class="svc__num">03</span><h3>SaaS Development</h3><p>Building scalable multi-tenant SaaS products with billing, auth, dashboards and cloud-ready architecture.</p></article>
+            <article class="svc reveal"><span class="svc__num">04</span><h3>Deployment</h3><p>Smooth and secure deployment services to get your applications live and performing at their best.</p></article>
+            <article class="svc reveal"><span class="svc__num">05</span><h3>AI Integration</h3><p>Empower applications with intelligent AI solutions to enhance automation, insights and user experience.</p></article>
+            <article class="svc reveal"><span class="svc__num">06</span><h3>Web Scraping</h3><p>Extracting valuable data from websites efficiently and securely to power your business insights.</p></article>
+            <article class="svc reveal"><span class="svc__num">07</span><h3>Third-Party Integrations</h3><p>Integrating trusted services like Google Calendar for a smarter app experience.</p></article>
+            <article class="svc reveal"><span class="svc__num">08</span><h3>Testing</h3><p>Ensure the reliability and performance of your app with thorough testing and quality assurance.</p></article>
+            <article class="svc reveal"><span class="svc__num">09</span><h3>Payment Gateways</h3><p>Integrated and tested secure payment gateways to ensure seamless and reliable transaction flows.</p></article>
+            <article class="svc reveal"><span class="svc__num">10</span><h3>React &amp; Next.js</h3><p>Building fast, SEO-friendly frontends and full-stack apps with React.js and Next.js.</p></article>
+            <article class="svc reveal"><span class="svc__num">11</span><h3>Django &amp; REST APIs</h3><p>Scalable Python backends and REST APIs with Django for secure, production-ready applications.</p></article>
+            <article class="svc reveal"><span class="svc__num">12</span><h3>Java Development</h3><p>Robust enterprise applications and backend services built with Java and modern frameworks.</p></article>
+            <article class="svc reveal"><span class="svc__num">13</span><h3>Vibe Coding</h3><p>Rapid AI-assisted development to ship features faster without sacrificing code quality.</p></article>
+            <article class="svc reveal"><span class="svc__num">14</span><h3>API Automation</h3><p>Automating API workflows, integrations and data pipelines to save time and reduce manual work.</p></article>
+            <article class="svc reveal"><span class="svc__num">15</span><h3>AI Agent Workflows</h3><p>Designing and deploying AI agents that automate tasks, connect tools and streamline business processes.</p></article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="ftco-section ftco-project" id="projects-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-            <span class="subheading">Accomplishments</span>
-            <h2 class="mb-4">My Projects</h2>
-            <p>
-              Explore the projects I've worked on, where creativity meets
-              execution. Each project tells a story of innovation and
-              problem-solving, from concept to delivery.
-            </p>
-          </div>
-        </div>
-
-        <div class="projects-grid">
-          <a href="deply.html" class="project-card">
-            <div class="project-card-media" style="background-image: url(images/deply.png)"></div>
-            <div class="project-card-body">
-              <h3>DEPLY</h3>
-              <span>SaaS / Next.js</span>
-            </div>
-          </a>
-          <a href="auditready.html" class="project-card">
-            <div class="project-card-media" style="background-image: url(images/checklist.png)"></div>
-            <div class="project-card-body">
-              <h3>AUDITREADY</h3>
-              <span>Cybersecurity Platform</span>
-            </div>
-          </a>
-          <a href="jm.html" class="project-card">
-            <div class="project-card-media" style="background-image: url(images/jm.png)"></div>
-            <div class="project-card-body">
-              <h3>JM LOGISTICS</h3>
-              <span>Web Development</span>
-            </div>
-          </a>
-          <a href="isoftinternal.html" class="project-card">
-            <div class="project-card-media" style="background-image: url(images/isoft.png)"></div>
-            <div class="project-card-body">
-              <h3>ISOFTINTERNAL</h3>
-              <span>Web Development</span>
-            </div>
-          </a>
-          <a href="nyxion.html" class="project-card">
-            <div class="project-card-media" style="background-image: url(images/nyxion.png)"></div>
-            <div class="project-card-body">
-              <h3>NYXION.AI</h3>
-              <span>Web Development</span>
-            </div>
-          </a>
-          <a href="visume.html" class="project-card">
-            <div class="project-card-media" style="background-image: url(images/visume.png)"></div>
-            <div class="project-card-body">
-              <h3>VISUME</h3>
-              <span>Web / App Development</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="text-center mt-5">
-          <a href="projects.html" class="btn btn-primary py-3 px-5">View All Projects</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section testimony-section" id="testimonials-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-            <span class="subheading">Testimonials</span>
-            <h2 class="mb-4">What My Clients Say About Me</h2>
-            <p>
-              Feedback from people I've worked with on real products and
-              launches.
-            </p>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel">
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <span class="fa fa-quote-left"></span>
-                    <p class="mb-4 pl-5">
-                      Aqsa delivered a clean, scalable platform for us and
-                      communicated clearly at every step. The release was smooth
-                      and the code quality was excellent.
-                    </p>
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="user-img"
-                        style="background-image: url(images/person_1.jpg)"
-                      ></div>
-                      <div class="pl-3">
-                        <p class="name">Sarah Mitchell</p>
-                        <span class="position">Product Founder</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <span class="fa fa-quote-left"></span>
-                    <p class="mb-4 pl-5">
-                      She took our complex requirements and turned them into a
-                      fast, reliable web app. Integrations, UI, and backend all
-                      came together without drama.
-                    </p>
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="user-img"
-                        style="background-image: url(images/person_2.jpg)"
-                      ></div>
-                      <div class="pl-3">
-                        <p class="name">Daniel Brooks</p>
-                        <span class="position">CTO</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <span class="fa fa-quote-left"></span>
-                    <p class="mb-4 pl-5">
-                      Working with Aqsa felt like having a true partner. She
-                      suggested better approaches, shipped on schedule, and
-                      improved our product experience significantly.
-                    </p>
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="user-img"
-                        style="background-image: url(images/person_3.jpg)"
-                      ></div>
-                      <div class="pl-3">
-                        <p class="name">Amelia Chen</p>
-                        <span class="position">Startup CEO</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <span class="fa fa-quote-left"></span>
-                    <p class="mb-4 pl-5">
-                      From API work to deployment, everything was handled with
-                      care. Aqsa is dependable, skilled, and easy to collaborate
-                      with across time zones.
-                    </p>
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="user-img"
-                        style="background-image: url(images/person_4.jpg)"
-                      ></div>
-                      <div class="pl-3">
-                        <p class="name">Omar Hassan</p>
-                        <span class="position">Operations Lead</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="ftco-section contact-section"
-      id="contact-section"
-    >
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-8 heading-section text-center ftco-animate">
-            <span class="subheading">Contact</span>
-            <h2 class="mb-4">Let me build something great with you</h2>
-            <p>
-              I help startups and businesses create fast, reliable, and
-              user-focused products. Share your idea, and I will help you plan
-              and launch it.
-            </p>
-          </div>
-        </div>
-
-        <div class="row contact-layout align-items-center">
-          <div class="col-lg-5 mb-4 mb-lg-0">
-            <div class="contact-info-side">
-              <div class="dbox d-flex align-items-center mb-4">
-                <div class="icon d-flex align-items-center justify-content-center mb-0">
-                  <span class="fa fa-linkedin"></span>
-                </div>
-                <div class="text text-left">
-                  <p>
-                    <span>LinkedIn:</span>
-                    <a
-                      href="https://www.linkedin.com/in/aqsa-altaf-295416201/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Visit My LinkedIn Profile</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <div class="dbox d-flex align-items-center mb-4">
-                <div class="icon d-flex align-items-center justify-content-center mb-0">
-                  <span class="fa fa-paper-plane"></span>
-                </div>
-                <div class="text text-left">
-                  <p>
-                    <span>Email:</span>
-                    <a href="mailto:aqsaaltaf01@gmail.com">aqsaaltaf01@gmail.com</a>
-                  </p>
-                  <p class="mb-0">
-                    <a href="mailto:aqsaaltaf.dev@skaitechco.com">aqsaaltaf.dev@skaitechco.com</a>
-                  </p>
-                </div>
-              </div>
-              <div class="dbox d-flex align-items-center mb-4">
-                <div class="icon d-flex align-items-center justify-content-center mb-0">
-                  <span class="fa fa-phone"></span>
-                </div>
-                <div class="text text-left">
-                  <p>
-                    <span>Phone:</span>
-                    <a href="tel:+923258867715">+92 325 8867715</a>
-                  </p>
-                </div>
-              </div>
-              <div class="dbox d-flex align-items-center mb-0">
-                <div class="icon d-flex align-items-center justify-content-center mb-0">
-                  <span class="fa fa-github"></span>
-                </div>
-                <div class="text text-left">
-                  <p>
-                    <span>GitHub:</span>
-                    <a
-                      href="https://github.com/AqsaAltaf1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >github.com/AqsaAltaf1</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="contact-visual text-center">
-              <img
-                src="images/contact.png"
-                alt="Technology and development illustration"
-                class="img-fluid contact-visual-img"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="ftco-footer ftco-section">
-      <div class="container">
-        <div class="row align-items-start mb-5">
-          <div class="col-md-5 mb-4 mb-md-0">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Let's talk about your project</h2>
-              <p>
-                Looking for a full-stack engineer for your next web product?
-                I can help with planning, development, integrations, and launch.
+      <!-- ================= WHY ME ================= -->
+      <section class="section rule-top" id="why-me-section">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <p class="kicker">04 — My value</p>
+            <div>
+              <h2>Why choose me</h2>
+              <p class="lead" style="margin-top: 16px">
+                I combine strong technical skills with clear communication and a
+                focus on shipping products that actually move your business forward.
               </p>
-              <ul class="ftco-footer-social list-unstyled mt-4">
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/aqsa-altaf-295416201/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                    ><span class="fa fa-linkedin"></span
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/AqsaAltaf1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                    ><span class="fa fa-github"></span
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:aqsaaltaf.dev@skaitechco.com"
-                    aria-label="Email"
-                    ><span class="fa fa-envelope"></span
-                  ></a>
-                </li>
-              </ul>
             </div>
           </div>
-          <div class="col-md-3 mb-4 mb-md-0">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Links</h2>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#home-section"
-                    ><span class="fa fa-chevron-right mr-2"></span>Home</a
-                  >
-                </li>
-                <li>
-                  <a href="#about-section"
-                    ><span class="fa fa-chevron-right mr-2"></span>About</a
-                  >
-                </li>
-                <li>
-                  <a href="#services-section"
-                    ><span class="fa fa-chevron-right mr-2"></span>Services</a
-                  >
-                </li>
-                <li>
-                  <a href="#why-me-section"
-                    ><span class="fa fa-chevron-right mr-2"></span>Why Me</a
-                  >
-                </li>
-                <li>
-                  <a href="projects.html"
-                    ><span class="fa fa-chevron-right mr-2"></span>Projects</a
-                  >
-                </li>
-                <li>
-                  <a href="#testimonials-section"
-                    ><span class="fa fa-chevron-right mr-2"></span>Reviews</a
-                  >
-                </li>
-                <li>
-                  <a href="#contact-section"
-                    ><span class="fa fa-chevron-right mr-2"></span>Contact</a
-                  >
-                </li>
-              </ul>
+
+          <div class="why-grid reveal">
+            <article class="why">
+              <b>01</b>
+              <h3>5+ Years Experience</h3>
+              <p>Proven track record building web apps, SaaS products and scalable backends for startups and growing businesses.</p>
+            </article>
+            <article class="why">
+              <b>02</b>
+              <h3>SaaS Development</h3>
+              <p>Building scalable multi-tenant SaaS products with billing, auth, dashboards and cloud-ready architecture.</p>
+            </article>
+            <article class="why">
+              <b>03</b>
+              <h3>Modern AI Tools</h3>
+              <p>Using modern AI tools and workflows to ship faster, automate processes and build smarter product features.</p>
+            </article>
+            <article class="why">
+              <b>04</b>
+              <h3>Third-Party Integration</h3>
+              <p>Connecting payments, calendars, APIs and external services so your product works with the tools you already use.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WORK ================= -->
+      <section class="section rule-top" id="projects-section">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <p class="kicker">05 — Accomplishments</p>
+            <div>
+              <h2>Selected work</h2>
+              <p class="lead" style="margin-top: 16px">
+                Each project tells a story of innovation and problem-solving,
+                from concept to delivery.
+              </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Get in touch</h2>
-              <div class="block-23 mb-3">
-                <ul>
-                  <li>
-                    <span class="icon fa fa-map-marker"></span
-                    ><span class="text">Pakistan</span>
-                  </li>
-                  <li>
-                    <a href="tel:+923258867715"
-                      ><span class="icon fa fa-phone"></span
-                      ><span class="text">+92 325 8867715</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="mailto:aqsaaltaf01@gmail.com"
-                      ><span class="icon fa fa-paper-plane"></span
-                      ><span class="text">aqsaaltaf01@gmail.com</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="mailto:aqsaaltaf.dev@skaitechco.com"
-                      ><span class="icon fa fa-paper-plane"></span
-                      ><span class="text">aqsaaltaf.dev@skaitechco.com</span></a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/AqsaAltaf1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      ><span class="icon fa fa-github"></span
-                      ><span class="text">github.com/AqsaAltaf1</span></a
-                    >
-                  </li>
-                </ul>
+
+          <div class="work">
+            <a class="work__row reveal" href="phantomlabs.html" data-peek="images/phantomlabs.png">
+              <span class="work__num">01</span>
+              <span class="work__main">
+                <span class="work__thumb" style="background-image: url(images/phantomlabs.png)"></span>
+                <h3>Phantom Labs</h3>
+                <span class="work__meta">Production ERP</span>
+              </span>
+              <span class="work__arrow">&#8599;</span>
+            </a>
+            <a class="work__row reveal" href="leaflink-hubspot.html" data-peek="images/leaflink_to_hubspot_automation.png">
+              <span class="work__num">02</span>
+              <span class="work__main">
+                <span class="work__thumb" style="background-image: url(images/leaflink_to_hubspot_automation.png)"></span>
+                <h3>LeafLink <span class="arw">&rarr;</span> HubSpot</h3>
+                <span class="work__meta">API automation</span>
+              </span>
+              <span class="work__arrow">&#8599;</span>
+            </a>
+            <a class="work__row reveal" href="lumaehr.html" data-peek="images/lumaehr.png">
+              <span class="work__num">03</span>
+              <span class="work__main">
+                <span class="work__thumb" style="background-image: url(images/lumaehr.png)"></span>
+                <h3>LumaEHR</h3>
+                <span class="work__meta">Healthcare SaaS</span>
+              </span>
+              <span class="work__arrow">&#8599;</span>
+            </a>
+            <a class="work__row reveal" href="deply.html" data-peek="images/deply.png">
+              <span class="work__num">04</span>
+              <span class="work__main">
+                <span class="work__thumb" style="background-image: url(images/deply.png)"></span>
+                <h3>Deply</h3>
+                <span class="work__meta">SaaS · Next.js</span>
+              </span>
+              <span class="work__arrow">↗</span>
+            </a>
+            <a class="work__row reveal" href="auditready.html" data-peek="images/checklist.png">
+              <span class="work__num">05</span>
+              <span class="work__main">
+                <span class="work__thumb" style="background-image: url(images/checklist.png)"></span>
+                <h3>AuditReady</h3>
+                <span class="work__meta">Cybersecurity platform</span>
+              </span>
+              <span class="work__arrow">↗</span>
+            </a>
+            <a class="work__row reveal" href="jm.html" data-peek="images/jm.png">
+              <span class="work__num">06</span>
+              <span class="work__main">
+                <span class="work__thumb" style="background-image: url(images/jm.png)"></span>
+                <h3>JM Logistics</h3>
+                <span class="work__meta">Web development</span>
+              </span>
+              <span class="work__arrow">↗</span>
+            </a>
+            <a class="work__row reveal" href="isoftinternal.html" data-peek="images/isoft.png">
+              <span class="work__num">07</span>
+              <span class="work__main">
+                <span class="work__thumb" style="background-image: url(images/isoft.png)"></span>
+                <h3>iSoftInternal</h3>
+                <span class="work__meta">Web development</span>
+              </span>
+              <span class="work__arrow">↗</span>
+            </a>
+            <a class="work__row reveal" href="nyxion.html" data-peek="images/nyxion.png">
+              <span class="work__num">08</span>
+              <span class="work__main">
+                <span class="work__thumb" style="background-image: url(images/nyxion.png)"></span>
+                <h3>Nyxion.ai</h3>
+                <span class="work__meta">Web development</span>
+              </span>
+              <span class="work__arrow">↗</span>
+            </a>
+            <a class="work__row reveal" href="visume.html" data-peek="images/visume.png">
+              <span class="work__num">09</span>
+              <span class="work__main">
+                <span class="work__thumb" style="background-image: url(images/visume.png)"></span>
+                <h3>Visume</h3>
+                <span class="work__meta">Web · App development</span>
+              </span>
+              <span class="work__arrow">↗</span>
+            </a>
+          </div>
+
+          <div class="reveal" style="margin-top: 42px">
+            <a href="projects.html" class="btn">View all projects <i>→</i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONIALS ================= -->
+      <section class="section rule-top" id="testimonials-section">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <p class="kicker">06 — Testimonials</p>
+            <div>
+              <h2>Client words</h2>
+              <p class="lead" style="margin-top: 16px">
+                Feedback from people I've worked with on real products and launches.
+              </p>
+            </div>
+          </div>
+
+          <div class="quote-grid">
+            <blockquote class="quote reveal">
+              <span class="quote__mark">&ldquo;</span>
+              <p>Aqsa delivered a clean, scalable platform for us and communicated clearly at every step. The release was smooth and the code quality was excellent.</p>
+              <footer class="quote__by">
+                <span class="quote__av">SM</span>
+                <span><strong>Sarah Mitchell</strong><span>Product Founder</span></span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="quote reveal" data-delay="0.08">
+              <span class="quote__mark">&ldquo;</span>
+              <p>She took our complex requirements and turned them into a fast, reliable web app. Integrations, UI and backend all came together without drama.</p>
+              <footer class="quote__by">
+                <span class="quote__av">DB</span>
+                <span><strong>Daniel Brooks</strong><span>CTO</span></span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="quote reveal" data-delay="0.16">
+              <span class="quote__mark">&ldquo;</span>
+              <p>Working with Aqsa felt like having a true partner. She suggested better approaches, shipped on schedule and improved our product experience significantly.</p>
+              <footer class="quote__by">
+                <span class="quote__av">AC</span>
+                <span><strong>Amelia Chen</strong><span>Startup CEO</span></span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="quote reveal" data-delay="0.24">
+              <span class="quote__mark">&ldquo;</span>
+              <p>From API work to deployment, everything was handled with care. Aqsa is dependable, skilled and easy to collaborate with across time zones.</p>
+              <footer class="quote__by">
+                <span class="quote__av">OH</span>
+                <span><strong>Omar Hassan</strong><span>Operations Lead</span></span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CTA BAND ================= -->
+      <section class="band">
+        <div class="wrap">
+          <h2 class="reveal">Have a project on your mind?</h2>
+          <p class="reveal" data-delay="0.08">
+            Let's collaborate to build secure, scalable, user-focused applications
+            tailored to your goals — a custom web app, an API integration, or a
+            complete platform. I'll work with you every step of the way.
+          </p>
+          <div class="reveal" data-delay="0.16">
+            <a href="#contact-section" class="btn">Contact me <i>→</i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="section" id="contact-section">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <p class="kicker">07 — Contact</p>
+            <div>
+              <h2>Let's build something great</h2>
+              <p class="lead" style="margin-top: 16px">
+                I help startups and businesses create fast, reliable and
+                user-focused products. Share your idea and I'll help you plan
+                and launch it.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-list reveal">
+              <div class="cx">
+                <span class="cx__ico"><i class="fa fa-paper-plane"></i></span>
+                <span>
+                  <span class="cx__lab">Email</span>
+                  <a href="mailto:aqsaaltaf01@gmail.com">aqsaaltaf01@gmail.com</a>
+                </span>
+              </div>
+              <div class="cx">
+                <span class="cx__ico"><i class="fa fa-phone"></i></span>
+                <span>
+                  <span class="cx__lab">Phone</span>
+                  <a href="tel:+923258867715">+92 325 8867715</a>
+                </span>
+              </div>
+              <div class="cx">
+                <span class="cx__ico"><i class="fa fa-linkedin"></i></span>
+                <span>
+                  <span class="cx__lab">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/aqsa-altaf-295416201/" target="_blank" rel="noopener noreferrer">Visit my profile</a>
+                </span>
+              </div>
+              <div class="cx">
+                <span class="cx__ico"><i class="fa fa-github"></i></span>
+                <span>
+                  <span class="cx__lab">GitHub</span>
+                  <a href="https://github.com/AqsaAltaf1" target="_blank" rel="noopener noreferrer">github.com/AqsaAltaf1</a>
+                </span>
+              </div>
+              <div class="cx">
+                <span class="cx__ico"><i class="fa fa-map-marker"></i></span>
+                <span>
+                  <span class="cx__lab">Based in</span>
+                  <span class="val">Pakistan · working across time zones</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="reveal" data-delay="0.12">
+              <p class="about__big" style="max-width: none">
+                Prefer email? Write to me directly and I'll come back to you
+                within one working day.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px">
+                <a href="mailto:aqsaaltaf01@gmail.com" class="btn btn--solid">Start a conversation <i>→</i></a>
+                <a href="projects.html" class="btn">Browse projects <i>→</i></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p class="mb-0">
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              All rights reserved
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="foot">
+      <div class="wrap">
+        <div class="foot__grid">
+          <div>
+            <p class="foot__big">Let's talk about your project</p>
+            <p style="color: var(--muted); font-size: 14.5px; margin-top: 16px; max-width: 42ch">
+              Looking for a full-stack engineer for your next web product? I can
+              help with planning, development, integrations and launch.
             </p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/aqsa-altaf-295416201/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/AqsaAltaf1" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-github"></i></a>
+              <a href="mailto:aqsaaltaf01@gmail.com" aria-label="Email"><i class="fa fa-paper-plane"></i></a>
+            </div>
           </div>
+
+          <div>
+            <h4>Links</h4>
+            <ul>
+              <li><a href="#home-section">Home</a></li>
+              <li><a href="#about-section">About</a></li>
+              <li><a href="#services-section">Services</a></li>
+              <li><a href="#why-me-section">Why me</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="#testimonials-section">Reviews</a></li>
+              <li><a href="#contact-section">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Get in touch</h4>
+            <ul>
+              <li><a href="tel:+923258867715">+92 325 8867715</a></li>
+              <li><a href="mailto:aqsaaltaf01@gmail.com">aqsaaltaf01@gmail.com</a></li>
+              <li><a href="https://github.com/AqsaAltaf1" target="_blank" rel="noopener noreferrer">github.com/AqsaAltaf1</a></li>
+              <li><span style="color: var(--muted); font-size: 14.5px">Pakistan</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot__base">
+          <span>&copy; <span data-year>2026</span> Aqsa Altaf</span>
+          <span>Full-stack &amp; AI engineer</span>
         </div>
       </div>
     </footer>
 
-    <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen">
-      <svg class="circular" width="48px" height="48px">
-        <circle
-          class="path-bg"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke="#eeeeee"
-        />
-        <circle
-          class="path"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke-miterlimit="10"
-          stroke="#F96D00"
-        />
-      </svg>
-    </div>
+    <div class="hover-peek" aria-hidden="true"></div>
+    <button class="to-top" type="button" aria-label="Back to top">↑</button>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
-
-    <script src="js/main.js"></script>
-    <script src="js/modern-animations.js"></script>
+    <script src="js/editorial.js"></script>
   </body>
 </html>

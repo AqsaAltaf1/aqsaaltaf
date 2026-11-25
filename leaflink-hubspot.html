@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LeafLink to HubSpot Automation | Aqsa Altaf</title>
+    <meta name="description" content="An automation pipeline syncing LeafLink orders, retailers, buyers and status changes into HubSpot CRM as deals, companies, contacts and pipeline stages." />
+    <meta name="theme-color" content="#F2F0EA" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/editorial.css" />
+  </head>
+
+  <body>
+    <div class="progress" aria-hidden="true"></div>
+
+    <header class="site-head">
+      <div class="wrap site-head__in">
+        <a class="brand" href="index.html">Aqsa Altaf<span>.</span></a>
+
+        <nav class="nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html#about-section">About</a></li>
+            <li><a href="index.html#skills-section">Skills</a></li>
+            <li><a href="index.html#services-section">Services</a></li>
+            <li><a href="index.html#why-me-section">Why me</a></li>
+            <li><a href="projects.html">Work</a></li>
+            <li><a href="index.html#testimonials-section">Reviews</a></li>
+            <li><a href="index.html#contact-section">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="head-right">
+          <span class="avail"><i></i> Available for work</span>
+          <button class="theme-btn" type="button" aria-label="Toggle colour theme">&#9790;</button>
+          <button class="burger" type="button" aria-label="Toggle menu" aria-controls="mobile-nav">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="index.html#about-section">About <em>01</em></a>
+      <a href="index.html#skills-section">Skills <em>02</em></a>
+      <a href="index.html#services-section">Services <em>03</em></a>
+      <a href="index.html#why-me-section">Why me <em>04</em></a>
+      <a href="projects.html">Work <em>05</em></a>
+      <a href="index.html#testimonials-section">Reviews <em>06</em></a>
+      <a href="index.html#contact-section">Contact <em>07</em></a>
+    </nav>
+
+    <main>
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="kicker">Case study</p>
+          <h1>LeafLink <span class="arw">&rarr;</span> HubSpot</h1>
+          <div class="page-hero__meta">
+            <span class="crumb"><a href="index.html">Home</a> / <a href="projects.html">Projects</a> / LeafLink &rarr; HubSpot</span>
+            <span class="crumb">API automation</span>
+          </div>
+          <div class="page-hero__meta">
+            <a class="btn btn--solid" href="index.html#contact-section">Discuss a similar build <i>&#8594;</i></a>
+            <a class="btn" href="projects.html">All projects <i>&#8594;</i></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="article-grid">
+            <article class="prose reveal">
+              <h2>1# LeafLink <span class="arw">&rarr;</span> HubSpot Automation</h2>
+              <p>
+                A data pipeline that keeps a HubSpot CRM in step with LeafLink,
+                the wholesale cannabis marketplace. Every order, retailer, buyer
+                and status change in LeafLink is pushed into HubSpot
+                automatically, so the sales team works from live data instead of
+                re-keying records by hand.
+              </p>
+
+              <img src="images/leaflink_to_hubspot_automation.png" alt="LeafLink to HubSpot automation architecture - source objects, automation engine and CRM destination" />
+
+              <h2>2# What Gets Synced</h2>
+              <p>
+                Four LeafLink objects map onto their natural HubSpot
+                counterparts, so the CRM mirrors the marketplace without
+                duplicating anything:
+              </p>
+              <ul>
+                <li><strong>Order &rarr; Deal</strong> — amount, close date and owner populated from the order.</li>
+                <li><strong>Retailer &rarr; Company</strong> — dispensary details and licence data create the account record.</li>
+                <li><strong>Buyer &rarr; Contact</strong> — contact name, email and phone, linked to both company and deal.</li>
+                <li><strong>Order status &rarr; Deal stage</strong> — pending, shipped and delivered move the deal through the pipeline.</li>
+              </ul>
+
+              <h2>3# The Automation Engine</h2>
+              <p>
+                The middle layer runs on Zapier, Make and n8n against the
+                LeafLink and HubSpot APIs, in a three-step cycle:
+              </p>
+              <ul>
+                <li><strong>Trigger</strong> — fires on a new or updated order.</li>
+                <li><strong>Transform</strong> — maps and cleans fields so values match HubSpot's property schema.</li>
+                <li><strong>Upsert</strong> — creates the record if it is new, updates it if it already exists.</li>
+              </ul>
+              <p>
+                The upsert step is what keeps the CRM clean: records are matched
+                before they are written, so a repeat sync updates the existing
+                company, contact or deal instead of creating a second copy.
+              </p>
+
+              <h2>4# End-to-End Flow</h2>
+              <ul>
+                <li><strong>1 &middot; Trigger</strong> — an order is placed or updated in LeafLink.</li>
+                <li><strong>2 &middot; Map</strong> — fields are matched to the corresponding HubSpot properties.</li>
+                <li><strong>3 &middot; Sync</strong> — company, contact and deal are created or updated together.</li>
+                <li><strong>4 &middot; Follow up</strong> — the deal moves along the pipeline and tasks are assigned to the team.</li>
+              </ul>
+
+              <h2>5# Outcome</h2>
+              <ul>
+                <li>No manual data entry between the marketplace and the CRM.</li>
+                <li>Real-time sync as orders and statuses change.</li>
+                <li>Zero duplicate records, thanks to match-then-upsert.</li>
+                <li>A CRM that is always current, so reporting and follow-up are based on live order data.</li>
+              </ul>
+            </article>
+            <aside class="side reveal" data-delay="0.1">
+              <div class="sidebar-box">
+                <h3 class="heading-sidebar">Skills Used</h3>
+                <div class="tagcloud">
+                  <a href="#" class="tag-cloud-link">API Automation</a>
+                  <a href="#" class="tag-cloud-link">HubSpot CRM</a>
+                  <a href="#" class="tag-cloud-link">LeafLink API</a>
+                  <a href="#" class="tag-cloud-link">Zapier</a>
+                  <a href="#" class="tag-cloud-link">Make</a>
+                  <a href="#" class="tag-cloud-link">n8n</a>
+                  <a href="#" class="tag-cloud-link">Webhooks</a>
+                  <a href="#" class="tag-cloud-link">Data Mapping</a>
+                  <a href="#" class="tag-cloud-link">Third-Party Integration</a>
+                </div>
+              </div>
+
+              <div class="sidebar-box">
+                <h3 class="heading-sidebar">Type</h3>
+                <p>Internal automation &amp; CRM integration. No public URL.</p>
+              </div>
+
+              <div class="sidebar-box">
+                <h3 class="heading-sidebar">Other Projects</h3>
+                <div class="block-21 mb-4 d-flex">
+                  <a class="blog-img mr-4" href="lumaehr.html" style="background-image: url(images/lumaehr.png)"></a>
+                  <div class="text"><h3 class="heading"><a href="lumaehr.html">LumaEHR</a></h3></div>
+                </div>
+                <div class="block-21 mb-4 d-flex">
+                  <a class="blog-img mr-4" href="deply.html" style="background-image: url(images/deply.png)"></a>
+                  <div class="text"><h3 class="heading"><a href="deply.html">Deply</a></h3></div>
+                </div>
+                <div class="block-21 mb-4 d-flex">
+                  <a class="blog-img mr-4" href="auditready.html" style="background-image: url(images/checklist.png)"></a>
+                  <div class="text"><h3 class="heading"><a href="auditready.html">AuditReady</a></h3></div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap">
+        <div class="foot__grid">
+          <div>
+            <p class="foot__big">Let's talk about your project</p>
+            <p style="color: var(--muted); font-size: 14.5px; margin-top: 16px; max-width: 42ch">
+              Looking for a full-stack engineer for your next web product? I can
+              help with planning, development, integrations and launch.
+            </p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/aqsa-altaf-295416201/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/AqsaAltaf1" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-github"></i></a>
+              <a href="mailto:aqsaaltaf01@gmail.com" aria-label="Email"><i class="fa fa-paper-plane"></i></a>
+            </div>
+          </div>
+
+          <div>
+            <h4>Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#about-section">About</a></li>
+              <li><a href="index.html#services-section">Services</a></li>
+              <li><a href="index.html#why-me-section">Why me</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="index.html#testimonials-section">Reviews</a></li>
+              <li><a href="index.html#contact-section">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Get in touch</h4>
+            <ul>
+              <li><a href="tel:+923258867715">+92 325 8867715</a></li>
+              <li><a href="mailto:aqsaaltaf01@gmail.com">aqsaaltaf01@gmail.com</a></li>
+              <li><a href="https://github.com/AqsaAltaf1" target="_blank" rel="noopener noreferrer">github.com/AqsaAltaf1</a></li>
+              <li><span style="color: var(--muted); font-size: 14.5px">Pakistan</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot__base">
+          <span>&copy; <span data-year>2026</span> Aqsa Altaf</span>
+          <span>Full-stack &amp; AI engineer</span>
+        </div>
+      </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="Back to top">&#8593;</button>
+
+    <script src="js/editorial.js"></script>
+  </body>
+</html>
